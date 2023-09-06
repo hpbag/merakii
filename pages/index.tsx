@@ -35,16 +35,18 @@ const Home: NextPage = () => {
           {Object.keys(topRow).map((detailKey) => {
             return (
               <CarouselItem
+                key={detailKey}
                 imgUrl={topRow[detailKey].imgUrl}
-                imgTitle={topRow[detailKey].title}
+                title={topRow[detailKey].title}
               ></CarouselItem>
             );
           })}
           {Object.keys(topRow).map((detailKey) => {
             return (
               <CarouselItem
+                key={detailKey}
                 imgUrl={topRow[detailKey].imgUrl}
-                imgTitle={topRow[detailKey].title}
+                title={topRow[detailKey].title}
               ></CarouselItem>
             );
           })}
@@ -54,16 +56,18 @@ const Home: NextPage = () => {
           {Object.keys(bottomRow).map((detailKey) => {
             return (
               <CarouselItem
+                key={detailKey}
                 imgUrl={bottomRow[detailKey].imgUrl}
-                imgTitle={bottomRow[detailKey].title}
+                title={bottomRow[detailKey].title}
               ></CarouselItem>
             );
           })}
           {Object.keys(bottomRow).map((detailKey) => {
             return (
               <CarouselItem
+                key={detailKey}
                 imgUrl={bottomRow[detailKey].imgUrl}
-                imgTitle={bottomRow[detailKey].title}
+                title={bottomRow[detailKey].title}
               ></CarouselItem>
             );
           })}

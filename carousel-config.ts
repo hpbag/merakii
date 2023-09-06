@@ -1,4 +1,6 @@
-export const topRow = {
+import { CarouselItemProps } from './components/CarouselItem';
+
+export const topRow: Record<string, CarouselItemProps> = {
   0: {
     imgUrl: "1.jpg",
     title: "Party"
@@ -71,7 +73,7 @@ export const topRow = {
   },
 }
 
-export const bottomRow = {
+export const bottomRow: Record<string, CarouselItemProps> = {
   0: {
     imgUrl: "19.jpeg",
     title: "Party"

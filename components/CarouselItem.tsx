@@ -1,12 +1,12 @@
-interface CarouselItemProps {
+export interface CarouselItemProps {
   imgUrl: string;
-  imgTitle: string;
+  title: string;
 }
 
-export default function CarouselItem({ imgUrl, imgTitle }: CarouselItemProps) {
+export default function CarouselItem({ imgUrl, title }: CarouselItemProps) {
   return (
     <div className="carousel-card">
-      <img src={imgUrl} alt={imgTitle}></img>
+      <img src={imgUrl} alt={title}></img>
     </div>
   );
 }
