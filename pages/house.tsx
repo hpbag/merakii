@@ -17,11 +17,34 @@ const HousePage = () => {
             <ListItem>Events hosted by any house mates in collaboration with other tech-focused communities</ListItem>
             <ListItem>+ any other events or hangouts to explore the city!</ListItem>
           </UnorderedList>
-          <Image src='location.jpg'/>
+        </Stack>
 
+        
+        <Stack spacing={5} mt={10}>
+          <Text fontSize='2xl' as='b' mt={10}>Details</Text>
+          <UnorderedList>
+            <ListItem>8 bedroom, 4 bathroom house</ListItem>
+            <ListItem>2 full fledged kitchens with brand new appliances, gas stove, dishwasher, etc.</ListItem>
+            <ListItem>spacious living rooms with projector mounted on the ceiling</ListItem>
+            <ListItem>access to 3-story backyard patio</ListItem>
+            <ListItem>high speed internet</ListItem>
+          </UnorderedList>
+        </Stack>
+
+        
+        <Stack spacing={5} mt={10}>
+          <Text fontSize='2xl' as='b' mt={10}>Location</Text>
+          <Image src='location.jpg'/>
+          <Text>Located in the Mission District, San Francisco.</Text>
+          <UnorderedList>
+            <ListItem>quiet, tree-lined, sunny neighborhood</ListItem>
+            <ListItem>5 min walk to a BART station, hub for local transportation of busses and trains</ListItem>
+            <ListItem>15 min walk to mission delores park</ListItem>
+            <ListItem>close to tons of farmers market, grocery stores, and major grocery chains</ListItem>
+            <ListItem>tons of restaurants and bars within a short walking distance!</ListItem>
+          </UnorderedList>
         </Stack>
       </Box>
-
     </Box>
   )
 }
