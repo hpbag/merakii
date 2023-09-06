@@ -1,0 +1,107 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background: '#FFEDED';
+  min-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.carousel-container {
+  overflow: hidden;
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-card > img {
+  height: 200px;
+  width: auto;
+  filter: grayscale(100%);
+}
+
+.carousel-track {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 6140px;;
+
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.carousel-card-bigger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-card-bigger > img {
+  height: 500px;
+  width: auto;
+  filter: grayscale(100%);
+}
+
+.carousel-track-bigger {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 6140px;;
+
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide-bigger {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* Adjust animation duration for smaller screens */
+@media (max-width: 768px) {
+  .carousel-track {
+    animation: slide-small-screens 20s linear infinite;
+  }
+
+  /* Keyframes for smaller screens */
+  @keyframes slide-small-screens {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+}
